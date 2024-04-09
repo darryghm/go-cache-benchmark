@@ -3,12 +3,15 @@ module go-cache-benchmark
 go 1.18
 
 require (
+	github.com/bluele/gcache v0.0.2
+	github.com/coocood/freecache v1.2.4
 	github.com/dgraph-io/ristretto v0.0.3
 	github.com/dgryski/go-clockpro v0.0.0-20140817124034-edc6d3eeb96e
 	github.com/dgryski/go-s4lru v0.0.0-20150401095600-fd9b33c61bfe
 	github.com/dgryski/go-tinylfu v0.0.0-20210109191853-fba88f4a7f91
 	github.com/golang/groupcache v0.0.0-20191027212112-611e8accdfc9
 	github.com/hashicorp/golang-lru v0.5.1
+	github.com/hashicorp/golang-lru/v2 v2.0.7
 	github.com/irr123/wtfcache v0.0.1
 	github.com/olekukonko/tablewriter v0.0.5
 	github.com/pingcap/go-ycsb v0.0.0-20210129115622-04d8656123e4

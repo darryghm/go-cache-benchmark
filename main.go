@@ -14,6 +14,10 @@ func main() {
 	cacheSize := []int{1e3, 10e3, 100e3, 1e6}
 	multiplier := []int{10, 100, 1000}
 	newCache := []NewCacheFunc{
+		NewGcacheLRU,
+		NewHashicorpExpLRU,
+		NewHashicorpLRU,
+		NewFreeCacheLRU,
 		NewTinyLFU,
 		NewClockPro,
 		NewARC,
@@ -21,7 +25,6 @@ func main() {
 		NewDirectCache,
 		NewTwoQueue,
 		NewGroupCacheLRU,
-		NewHashicorpLRU,
 		NewS4LRU,
 		NewSLRU,
 		NewWTFCache,
